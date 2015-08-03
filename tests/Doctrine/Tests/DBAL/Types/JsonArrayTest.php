@@ -30,6 +30,6 @@ class JsonArrayTest extends \Doctrine\Tests\DbalTestCase
 
     public function testJsonEmptyStringConvertsToPHPValue()
     {
-        $this->assertSame(array(), $this->type->convertToPHPValue('', $this->platform));
+        $this->assertNull($this->type->convertToPHPValue('', $this->platform));
     }
 }
